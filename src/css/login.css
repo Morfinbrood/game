@@ -1,0 +1,60 @@
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.login-container input {
+    background: -webkit-gradient(linear, left top, left bottom, from(#1f2124), to(#27292c));
+    background: -webkit-linear-gradient(#1f2124, #27292c);
+    background: -o-linear-gradient(#1f2124, #27292c);
+    background: linear-gradient(#1f2124, #27292c);
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
+    color: #FF9900;
+    font-size: 0.875rem;
+    padding: 5px 5px;
+    font-style: italic;
+    width: 150px;
+    height: 45px;
+    letter-spacing: 1.5px;
+    border: 3px solid #FF9900;
+}
+
+.login-container input:focus {
+    outline-color: #FF9900
+}
+
+.login-container button {
+    width: 150px;
+    height: 40px;
+    background-color: #FF9900;
+    cursor: pointer;
+    border: none;
+    font-family: "Bender-bold", sans-serif;
+    text-transform: uppercase;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.login-container button:focus {
+    outline: none;
+    background-color: limegreen;
+}
+
+.login-container button:hover {
+    background-color: limegreen;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+    }
+    100% {
+        text-shadow: 0 0 5px #000, 0 0 10px #000, 0 0 15px #000, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+    }
+}

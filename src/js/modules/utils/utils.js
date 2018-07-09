@@ -1,10 +1,15 @@
-import $ from 'jquery';
 export default class Utils {
 
 	static setSprite(src) {
 		let img = document.createElement('img');
 		img.setAttribute('src', src);
 		return img;
+	}
+
+	static setAudioTrack(src) {
+		const audObj = new Audio();
+		audObj.src = src;
+		return audObj;
 	}
 
 	static minMaxValid(value, min, max) {
@@ -56,12 +61,10 @@ export default class Utils {
 		return force_vector;
 	}
 
-	static showLoader() {
-		$('.loader').show();
-	}
-
-	static hideLoader() {
-		$('.loader').delay(400).fadeOut('slow');
+	static pause(time) {
+		return new Promise((resolve) => {
+			setTimeout(resolve, time);
+		});
 	}
 
 }
